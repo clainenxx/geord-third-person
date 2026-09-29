@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.example.betterthirdperson.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [],
+  "client": [
+    "CameraMixin",
+    "MouseMixin",
+    "GameRendererMixin",
+    "LivingEntityMovementMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

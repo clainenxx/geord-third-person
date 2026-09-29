@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "betterthirdperson",
+  "version": "${version}",
+  "name": "Better Third Person",
+  "description": "Leawind's Third Person-style free camera for vanilla third person back view: the camera sits further back, higher, and offset to the right, and stays decoupled from the player's body rotation until you move or interact.",
+  "authors": [
+    "Geord"
+  ],
+  "contact": {
+    "sources": "https://github.com/clainenxx",
+    "homepage": "https://github.com/clainenxx"
+  },
+  "license": "MIT",
+  "icon": "assets/betterthirdperson/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.betterthirdperson.BetterThirdPersonClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "betterthirdperson.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
